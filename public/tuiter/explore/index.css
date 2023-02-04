@@ -1,0 +1,59 @@
+.wd-photo
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    float: right;
+    margin: 16px;
+}
+
+.wd-setting
+{
+    float: right;
+    width: 13px;
+    height: 13px;
+    margin: 12px;
+}
+
+.wd-highlight
+{
+    border-bottom: rgb(29, 161, 242);
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    color : rgb(29, 161, 242);
+}
+
+.wd-topic-options
+{
+    background: black;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.wd-topic-options-color
+{
+    color : rgb(110, 118, 125);
+}
+
+.wd-topicandtweetnum
+{
+    font-size: 13px;
+    color : rgb(110, 118, 125);
+    margin: 5px;
+    width: 70%;
+}
+
+.wd-title
+{
+    font-size: 16px;
+    color : white;
+    margin: 5px;
+    width: 70%;
+}
+
+.wd-author
+{
+    font-size: 13px;
+    color : white;
+    width: 70%;
+}
