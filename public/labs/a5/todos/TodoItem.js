@@ -6,7 +6,6 @@ const TodoItem = (todo) => {
       ${todo.title}
       (${todo.status})
     </li>
-
         `);
 }
 export default TodoItem;

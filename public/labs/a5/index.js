@@ -290,6 +290,12 @@ const init = () => {
     hideBtn.click(hideHandler);
     showBtn.click(showHandler);
 
+    const alice = { first: 'Alice', last: 'Wonderland', salary: 100000}
+    console.log(alice.salary);
+    alice.salary += 10000;
+    console.log(alice.salary);
+    alice['salary'] = alice.salary + 10000;
+    console.log(alice.salary);
 
 }
 $(init);
