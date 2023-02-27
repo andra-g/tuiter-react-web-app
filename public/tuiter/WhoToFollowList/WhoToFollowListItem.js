@@ -16,5 +16,5 @@ const WhoToFollowListItem = (who) => {
                 </div>
             </li>
         `);
-}
+};
 export default WhoToFollowListItem;
