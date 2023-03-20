@@ -3,18 +3,7 @@ import TuitStats from "./tuit-stats";
 import {deleteTuit} from "../tuits/tuits-reducer";
 import {useDispatch} from "react-redux";
 
-const TuitItem = (
-    {
-        post = {
-            "userName": "SpaceX",
-            "time": "2h",
-            "image": "tesla.png",
-            "handle": "@tesla",
-            "tuit": "Something arrogant MuSk would tweet.",
-            "liked": true, "replies": 123, "retuits": 432, "likes": 2345
-        }
-    }
-) => {
+const TuitItem = ({post}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
@@ -32,9 +21,10 @@ const TuitItem = (
                         <i className="fas fa-check-circle"></i>
                         {post.handle} : {post.time}
                     </div>
-                    <div>{post.title}</div>
+                    <div>{post.tuit}</div>
                 </div>
-                <TuitStats/>
+                <TuitStats
+                    key={post._id} post={post}/>
             </div>
         </li>
     );

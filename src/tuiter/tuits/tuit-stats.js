@@ -1,11 +1,7 @@
-import React from "react";
-const TuitStats = (
-    {
-        post = {
-            "liked": true, "replies": 123, "retuits": 432, "likes": 2345
-        }
-    }
-) => {
+import React, {useState} from "react";
+import {createTuit} from "./tuits-reducer";
+
+const TuitStats = ({post}) => {
     return(
             <div className="row mt-2">
                 <div className="col-2"></div>

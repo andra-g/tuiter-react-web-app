@@ -9,6 +9,10 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import {Route, Routes} from "react-router";
+import Labs from "../labs";
+import HelloWorld from "../labs/a6/hello-world";
+import {BrowserRouter} from "react-router-dom";
 const store = configureStore(
     {reducer: {who: whoReducer, tuits: tuitsReducer}});
 
