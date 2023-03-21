@@ -7,12 +7,14 @@ const NavigationSidebar = (
         <div className="list-group">
             <a className="list-group-item">Tuiter</a>
             <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+                    ${active === 'home'?'active':''}`}
+                href="http://localhost:3000/tuiter">
                 <i className="fab fa-twitter"></i>
                 Home
             </a>
             <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+                    ${active === 'explore'?'active':''}`}
+               href="http://localhost:3000/tuiter/explore">
                 <i className="fa fa-hashtag"></i>
                 Explore
             </a>
