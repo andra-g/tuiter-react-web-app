@@ -1,24 +1,27 @@
 import React, {useState} from "react";
 import "./tuit-stat.css"
 import {useDispatch} from "react-redux";
-import {updateTuitLike} from "./tuits-reducer";
+import {decrementTuitLike, incrementTuitLike} from "./tuits-reducer";
 
 const TuitStats = ({post}) => {
     const dispatch = useDispatch();
-    const updateTuitLikeHandler = (id, val) => {
-        dispatch(updateTuitLike(id, val));
-        console.log("sent the updateTuit Like");
+    const incrementTuitLikeHandler = (id) => {
+        dispatch(incrementTuitLike(id));
+    }
+
+    const decrementTuitLikeHandler = (id) => {
+        dispatch(decrementTuitLike(id));
     }
     const [isLiked, setIsLiked] = useState(post.liked);
     let likeButton;
     if (isLiked) {
         likeButton = (<i className="fa fa-heart color-pink"
                          onClick={() => {setIsLiked(false);
-                             updateTuitLikeHandler(post._id, -1);}}></i>);
+                             decrementTuitLikeHandler(post._id);}}></i>);
     } else {
         likeButton = (<i className="fa fa-heart color-black"
                          onClick={() => {setIsLiked(true);
-                             updateTuitLikeHandler(post._id, 1)}}></i>);
+                             incrementTuitLikeHandler(post._id)}}></i>);
     }
     return(
             <div className="row mt-2">
