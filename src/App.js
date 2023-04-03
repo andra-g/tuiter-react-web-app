@@ -7,7 +7,7 @@ import Explore from "./tuiter/explore/explore-page";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
-// TO DEPLOY!
+// TO DEPLOY AGAIN!
 function App() {
   return (
       <BrowserRouter>
