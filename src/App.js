@@ -6,8 +6,8 @@ import Tuiter from "./tuiter";
 import Explore from "./tuiter/explore/explore-page";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
-// to trigger deploy
 
+// TO DEPLOY!
 function App() {
   return (
       <BrowserRouter>
